@@ -1,0 +1,24 @@
+-- INSERT INTO burgers
+--     (name)
+-- VALUES
+--     ('Greasy Corn-Measles');
+-- INSERT INTO burgers
+--     (name)
+-- VALUES
+--     ('Skittles & Pork-Fat');
+-- INSERT INTO burgers
+--     (name, devoured)
+-- VALUES
+--     ('PBJ with Stink-Beetle', true);
+-- INSERT INTO burgers
+--     (name, devoured)
+-- VALUES
+--     ('The Marilyn Manson Special', true);
+-- INSERT INTO burgers
+--     (name, devoured)
+-- VALUES
+--     ("The Joe Biden Collector's Burger", true);
+-- INSERT INTO burgers
+--     (name)
+-- VALUES
+--     ('Blue Cheese & Pickled Feet');

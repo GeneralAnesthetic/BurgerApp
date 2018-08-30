@@ -1,0 +1,124 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+/* html {
+  /* background-image: url("https://static.vecteezy.com/system/resources/previews/000/148/243/non_2x/cute-burger-and-fries-character-fast-food-vector.jpg");
+  opacity: 0.2;
+  filter: alpha(opacity=50);
+  background-size: 95% 95%;
+  background-position: center;} */
+
+/* body {background-color: lightsteelblue;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/148/243/non_2x/cute-burger-and-fries-character-fast-food-vector.jpg");*/
+
+#schmuck {
+  opacity: 0.2;
+  filter: alpha(opacity=50);
+  background-size: 90% 90%;
+  background-position: right;
+  position: absolute;
+  z-index: -1;
+}
+
+main {
+  margin-top: 0;
+  z-index: 1;
+}
+html {
+  background-color: #ffc04c;
+}
+
+body {
+  width: 75%;
+  margin: 0 auto;
+
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#cute_burger {
+  display: block;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+
+  font-size: 65px;
+  margin: 50px;
+}
+
+.burgerAvailable {
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+
+  border-radius: 25px;
+  width: 100%;
+  margin: 10px;
+  padding: 10px;
+  background-color: #b7ffc2;
+  border: none;
+}
+
+.burgerAvailable:hover {
+  background-color: darkgray;
+}
+
+.burgerEaten {
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+
+  border-radius: 25px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #ffd1c9;
+}
+
+h2 {
+  text-align: center;
+
+  font-size: 30px;
+  margin: 50px;
+}
+
+.addBurgerButton {
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+
+  border-radius: 25px;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+
+  border: none;
+}
+
+.addBurgerButton:active {
+  background-color: darkgray;
+}
+
+/* .container {
+  stop-opacity: initial;
+  z-index: 1;
+  color: black;
+} */
