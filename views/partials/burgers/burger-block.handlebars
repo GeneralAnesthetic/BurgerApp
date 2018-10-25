@@ -1,6 +1,11 @@
-<form action='burgers/delete/{{this.id}}?_method=DELETE' method='POST'>
-    <button type='submit' id="Lamo"> DELETE YOURSELF SOME BURGERS! </button>
-</form> --}} {{!--
+{{!-- {{#if devoured}} --}} {{!-- should "data-devoured= true" be put in the form tags below? But in index.handlesbars "if
+devoured" is already being used--}}
+<div id="del" style='align-content: center; margin: center;'>
+    {{!-- action='/burgers/del/{{this.id}}?_method=DELETE' method="POST"> --}}
+    <button class="deleteburger" data-value={{this.id}} style="border:lightcyan;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-style: inset;border-width: 1px; border-color: lightcyan;">
+        DELETE BURGERS! </button>
+</div>
+{{!-- method='POST' after _method=DELETE--}} {{!-- value={{this.id}} --}} {{!--
 <li>
     {{name}}
 

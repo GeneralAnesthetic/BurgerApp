@@ -3,18 +3,123 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" src="/public/assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" src="../../public/assets/css/style.css" type="text/css" /> {{!-- type="text/javascript" --}}
+    <base href="/"> {{!--
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
+        crossorigin="anonymous"> --}}
     <title>MVC With Burgers!</title>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src='/public/assets/js/burgers.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='/assets/js/burgers.js' type="text/javascript"></script>
 
 </head>
+<style>
+    .container {
+        font-weight: bolder;
+        color: black;
+        position: relative;
+        margin: center;
+        align-content: center;
+        z-index: 1;
+    }
 
-<body>
-    <img src="https://static.vecteezy.com/system/resources/previews/000/148/243/non_2x/cute-burger-and-fries-character-fast-food-vector.jpg"
-        id="schmuck" background-poistion="center"> {{{ body }}}
+    #boogie {
+        align-content: center;
+        margin: center;
+
+    }
+
+    #del {
+        align-content: center;
+        margin: center;
+
+    }
+
+    loom {
+        position: relative;
+        margin: center;
+        width: 95%;
+        height: 95%;
+        background-image: url("https://static.vecteezy.com/system/resources/previews/000/148/243/non_2x/cute-burger-and-fries-character-fast-food-vector.jpg");
+        opacity: 0.2;
+        filter: alpha(opacity=50);
+        align-content: center;
+        background-repeat: no-repeat;
+        background-position: center;
+        /* Center the image */
+        background-repeat: no-repeat;
+        /* Do not repeat the image */
+        background-size: cover;
+        z-index: -1;
+    }
+
+    h1 {
+        text-align: center;
+
+        font-size: 65px;
+        margin: 50px;
+    }
+
+    .burgerAvailable {
+        font-weight: normal;
+        font-size: 20px;
+        text-align: center;
+
+        border-radius: 25px;
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+        background-color: lightseagreen;
+        border: none;
+    }
+
+    .burgerAvailable:hover {
+        background-color: darkgray;
+    }
+
+    .burgerEaten {
+        font-weight: normal;
+        font-size: 20px;
+        text-align: center;
+
+        border-radius: 25px;
+        margin: 10px;
+        padding: 10px;
+        background-color: lightseagreen;
+    }
+
+    h2 {
+        text-align: center;
+
+        font-size: 30px;
+        margin: 50px;
+    }
+
+    .addBurgerButton {
+        align-content: center;
+        font-weight: normal;
+        font-size: 20px;
+        text-align: center;
+
+        border-radius: 25px;
+        width: 100%;
+        margin: center;
+        padding: 10px;
+
+        border: none;
+    }
+
+    .addBurgerButton:active {
+        background-color: darkgray;
+    }
+</style>
+
+<body style='position:relative; background:lightgrey'>
+
+    {{{ body }}}
+
 </body>
 
 </html>

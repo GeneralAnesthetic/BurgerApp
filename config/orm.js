@@ -58,8 +58,8 @@ var orm = {
     queryString += ") ";
     queryString += "VALUES (";
     queryString += printQuestionMarks(vals.length);
-    queryString += ") ";
-
+    queryString += ")";
+    queryString += ";";
     console.log(queryString);
 
     connection.query(queryString, vals, function(err, result) {
@@ -72,12 +72,16 @@ var orm = {
   },
   // An example of objColVals would be {name: panther, sleepy: true}
   update: function(table, objColVals, condition, cb) {
+    console.log(table, "table");
+    console.log(objColVals, "object col vals");
+    console.log(condition, "condition");
     var queryString = "UPDATE " + table;
 
     queryString += " SET ";
     queryString += objToSql(objColVals);
     queryString += " WHERE ";
     queryString += condition;
+    queryString += ";";
 
     console.log(queryString);
     connection.query(queryString, function(err, result) {
@@ -88,12 +92,22 @@ var orm = {
       cb(result);
     });
   },
-  delete: function(table, objColVals, condition, cb) {
-    var queryString = "DELETE " + table;
-    queryString += "WHERE";
+  delete: function(table, condition, cb) {
+    console.log("In Orm Delete");
+    var queryString = "DELETE FROM " + table;
+    queryString += " WHERE ";
     queryString += condition;
+    queryString += ";";
+    console.log(queryString, " this is our query");
+    connection.query(queryString, function(err, result) {
+      if (err) {
+        throw err;
+      }
+      console.log(result, "this is results from delete");
+      cb(result);
+    });
   }
 };
 
-// Export the orm object for the model (cat.js).
 module.exports = orm;
+// Export the orm object for the model (cat.js).

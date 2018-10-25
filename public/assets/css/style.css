@@ -1,4 +1,4 @@
-li {
+/* li {
   padding: 5px;
   margin: 5px;
   background: #faebd7;
@@ -16,47 +16,69 @@ li {
 
 .form-group {
   margin-bottom: 5px;
-}
-/* html {
-  /* background-image: url("https://static.vecteezy.com/system/resources/previews/000/148/243/non_2x/cute-burger-and-fries-character-fast-food-vector.jpg");
-  opacity: 0.2;
-  filter: alpha(opacity=50);
-  background-size: 95% 95%;
-  background-position: center;} */
-
-/* body {background-color: lightsteelblue;
-  background-image: url("https://static.vecteezy.com/system/resources/previews/000/148/243/non_2x/cute-burger-and-fries-character-fast-food-vector.jpg");*/
-
-#schmuck {
-  opacity: 0.2;
-  filter: alpha(opacity=50);
-  background-size: 90% 90%;
-  background-position: right;
-  position: absolute;
-  z-index: -1;
-}
-
-main {
-  margin-top: 0;
+} */
+.container-fluid {
+  font-weight: bold;
+  color: darkred;
+  position: relative;
+  margin: center;
+  align-content: center;
   z-index: 1;
 }
-html {
-  background-color: #ffc04c;
-}
 
-body {
-  width: 75%;
+loom-container {
+  position: relative;
+  margin: center;
+  width: 95%;
+  height: 95%;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/148/243/non_2x/cute-burger-and-fries-character-fast-food-vector.jpg");
+  opacity: 0.2;
+  filter: alpha(opacity=50);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  z-index: -1;
+}
+/* body {}width: 75%;
   margin: 0 auto;
 
   display: flex;
   min-height: 100vh;
-  flex-direction: column;
-}
+  flex-direction: column;} */
 
-#cute_burger {
+/* body {background-color: lightsteelblue;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/148/243/non_2x/cute-burger-and-fries-character-fast-food-vector.jpg");*/
+
+/* #schmuck {
+  /* new stacking contexts (layering contexts) are created with opacities less than 1, so z-index is unecessary here */
+/* opacity: 0.2;
+  filter: alpha(opacity=50);
+  background-size: 90% 90%;
+  margin: auto;
+} */
+
+/* main {
+  position: absolute;
+  margin-top: 0;
+  z-index: 1;
+  margin-right: 5%;
+} */
+/* html {
+  height: 100%;
+  width: 100%;
+  background-color: #ffc04c;
+} */
+/* z-index only works with positioned items, otherwise the layering occurs with opacity, or by the order in which elements are listed in HTML  */
+/* or z-index: 1; position: absolute */
+
+/* #cute_burger {
   display: block;
   margin: auto;
-}
+} */
 
 h1 {
   text-align: center;
@@ -69,6 +91,7 @@ h1 {
   font-weight: normal;
   font-size: 20px;
   text-align: center;
+
 
   border-radius: 25px;
   width: 100%;
