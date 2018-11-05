@@ -25,3 +25,7 @@ connection.connect(function(err) {
 
 // Export connection for our ORM to use.
 module.exports = connection;
+
+// Host	h40lg7qyub2umdvb.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	
+// Username	ei2gqm5j5ldnkak4	
+// Password	u7gss8b804ft1dj1
